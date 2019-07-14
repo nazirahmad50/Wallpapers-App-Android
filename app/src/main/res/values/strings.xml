@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Ultra HD Wallpapers</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="wallpaper_imageView">Wallpaper Image</string>
+
+
+
+
+
+
+
+
+</resources>

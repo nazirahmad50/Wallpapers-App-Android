@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootViewWallpaper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewWallpaperActivity">
+
+    <ImageView
+        android:id="@+id/img_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_above="@id/adView"/>
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@android:color/transparent" />
+
+            <!--Toolbar is nested inside teh collpasing toolbar so it can be collapsed-->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:theme="@style/ToolbarColoredBackArrow"
+                app:popupTheme="@style/Theme.AppCompat.Light"
+                app:titleTextColor="@android:color/white">
+
+            </android.support.v7.widget.Toolbar>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:menu_colorNormal="@android:color/black"
+        app:menu_colorRipple="@android:color/black"
+        app:menu_colorPressed="@android:color/black"
+        app:menu_fab_size="normal"
+
+
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabWallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:src="@drawable/ic_terrain_white_24dp"
+            app:fab_colorNormal="@android:color/black"
+            app:fab_colorRipple="@android:color/black"
+            app:fab_colorPressed="@android:color/black"
+            app:fab_size="mini"
+            app:fab_label="Set As"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@android:color/black"
+            app:fab_colorRipple="@android:color/black"
+            app:fab_colorPressed="@android:color/black"
+            android:src="@drawable/ic_file_download_white_24dp"
+            app:fab_size="mini"
+            app:fab_label="Download"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@android:color/black"
+            app:fab_colorRipple="@android:color/black"
+            app:fab_colorPressed="@android:color/black"
+            android:src="@drawable/ic_share_white_24dp"
+            app:fab_size="mini"
+            app:fab_label="Share"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@android:color/black"
+            app:fab_colorRipple="@android:color/black"
+            app:fab_colorPressed="@android:color/black"
+            android:src="@drawable/ic_info_white_24dp"
+            app:fab_size="mini"
+            app:fab_label="Info"
+            />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-9684265233745287/7550948853">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

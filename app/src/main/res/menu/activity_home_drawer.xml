@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+    <item android:title="Management">
+        <menu>
+            <item
+                android:id="@+id/nav_favourites"
+                android:icon="@drawable/ic_favorite_black_24dp"
+                android:title="Favourites" />
+
+            <item
+                android:id="@+id/nav_upload"
+                android:icon="@drawable/ic_cloud_upload_black_24dp"
+                android:title="Upload" />
+
+            <item
+                android:id="@+id/nav_view_uploads"
+                android:icon="@drawable/ic_menu_gallery_black"
+                android:title="View Your Uploads" />
+
+
+            <item
+                android:id="@+id/nav_sign_out"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+    <item android:title="Settings">
+
+        <menu>
+        <item
+            android:id="@+id/nav_clear_cache"
+            android:icon="@drawable/ic_delete_red_24dp"
+            android:title="Clear Cache" />
+
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:icon="@drawable/ic_security_black_24dp"
+                android:title="Privacy Policy" />
+
+
+        </menu>
+
+    </item>
+
+
+</menu>

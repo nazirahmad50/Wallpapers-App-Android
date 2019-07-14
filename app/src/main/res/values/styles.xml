@@ -1,0 +1,63 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--Change Trending fragment menu items text color and background color-->
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:itemBackground">@color/grey</item>
+
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--Makes the top app toolbar text and navigation drawer icon color black-->
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+
+        <item name="android:textColorSecondary">@android:color/white</item>
+
+
+    </style>
+
+    <!--Used For the splash screen Used in the manifest
+    Instead of normal splash screen the preview screen will be used as splash screen-->
+    <style name="FullScreenTheme" parent="AppTheme">
+
+        <item name="android:actionBarStyle">@style/FullScreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+
+        <!--Used drawable layer list xml to display the logo instead of an normal image
+        Normal image would be stretched in the preview screen-->
+        <item name="android:windowBackground">@drawable/splash_screen_preview</item>
+
+
+
+
+    </style>
+
+    <style name="FullScreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+
+        <item name="android:background">@color/black_overlay</item>
+
+    </style>
+
+    <!--Clear Cache Navigation Drawer item: Alert dialog text color style-->
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+
+    </style>
+
+
+</resources>
